@@ -39,9 +39,8 @@ public class PriorityFilter extends AbstractFilterTarget {
     }
 
     /**
-     * Filter the log event based on priority.
-     * <p/>
-     * If LogEvent has a Lower priroity then discard it.
+     * <p>Filter the log event based on priority.</p>
+     * <p>If LogEvent has a Lower priroity then discard it.</p>
      *
      * @param event the event
      * @return return true to discard event, false otherwise

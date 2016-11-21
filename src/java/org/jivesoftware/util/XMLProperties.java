@@ -29,8 +29,8 @@ import java.io.*;
 import java.util.*;
 
 /**
- * Provides the the ability to use simple XML property files. Each property is
- * in the form X.Y.Z, which would map to an XML snippet of:
+ * <p>Provides the the ability to use simple XML property files. Each property is
+ * in the form X.Y.Z, which would map to an XML snippet of:</p>
  * <pre>
  * &lt;X&gt;
  *     &lt;Y&gt;
@@ -38,10 +38,9 @@ import java.util.*;
  *     &lt;/Y&gt;
  * &lt;/X&gt;
  * </pre>
- * <p/>
- * The XML file is passed in to the constructor and must be readable and
+ * <p>The XML file is passed in to the constructor and must be readable and
  * writtable. Setting property values will automatically persist those value
- * to disk. The file encoding used is UTF-8.
+ * to disk. The file encoding used is UTF-8.d</p>
  *
  * @author Derek DeMoro
  * @author Iain Shigeoka

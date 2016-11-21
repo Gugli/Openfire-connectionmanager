@@ -10,15 +10,13 @@ package org.jivesoftware.util.log.output.io.rotate;
 import java.io.File;
 
 /**
- * strategy for naming log files based on appending revolving suffix.
- * <p/>
- * Heavily odified by Bruce Ritchie (Jive Software) to rotate along
- * the following strategy:
- * <p/>
- * current log file will always be the base File name
+ * <p>strategy for naming log files based on appending revolving suffix.</p>
+ * <p>Heavily odified by Bruce Ritchie (Jive Software) to rotate along
+ * the following strategy:</p>
+ * <p>current log file will always be the base File name
  * the next oldest file will be the _1 file
  * the next oldest file will be the _2 file
- * etc.
+ * etc.</p>
  *
  * @author <a href="mailto:bh22351@i-one.at">Bernhard Huber</a>
  */

@@ -8,11 +8,10 @@
 package org.jivesoftware.util.log;
 
 /**
- * LogTarget is a class to encapsulate outputting LogEvent's.
- * This provides the base for all output and filter targets.
- * <p/>
- * Warning: If performance becomes a problem then this
- * interface will be rewritten as a abstract class.
+ * <p>LogTarget is a class to encapsulate outputting LogEvent's.
+ * This provides the base for all output and filter targets.</p>
+ * <p>Warning: If performance becomes a problem then this
+ * interface will be rewritten as a abstract class.</p>
  *
  * @author <a href="mailto:peter@apache.org">Peter Donald</a>
  */
