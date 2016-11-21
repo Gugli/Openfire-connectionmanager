@@ -383,7 +383,7 @@ public class MXParser extends org.xmlpull.mxp1.MXParser {
                 (codePoint == 0xA) ||
                 (codePoint == 0xD) ||
                 ((codePoint >= 0x20) && (codePoint <= 0xD7FF)) ||
-                ((codePoint >= 0xE000) && (codePoint <= 0xFFFD))) {
+                ((codePoint >= 0xE000) && (codePoint <= 0xFFFF))) {
             validCodepoint = true;
         }
         else if (highSurrogateSeen) {
