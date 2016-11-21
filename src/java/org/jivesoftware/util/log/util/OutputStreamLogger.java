@@ -11,15 +11,13 @@ import org.jivesoftware.util.log.Logger;
 import org.jivesoftware.util.log.Priority;
 
 /**
- * Redirect an output stream to a logger.
+ * <p>Redirect an output stream to a logger.
  * This class is useful to redirect standard output or
- * standard error to a Logger. An example use is
- * <p/>
+ * standard error to a Logger. An example use is</p>
  * <pre>
  * final OutputStreamLogger outputStream =
  *     new OutputStreamLogger( logger, Priority.DEBUG );
  * final PrintStream output = new PrintStream( outputStream, true );
- * <p/>
  * System.setOut( output );
  * </pre>
  *

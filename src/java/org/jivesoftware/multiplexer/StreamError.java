@@ -323,7 +323,7 @@ public class StreamError {
 
         /**
          * The entity has violated some local service policy; the server MAY choose to
-         * specify the policy in the <text/> element or an application-specific condition
+         * specify the policy in the &lt;text/&gt; element or an application-specific condition
          * element.
          */
         policy_violation("policy-violation"),

@@ -346,7 +346,7 @@ public class StringUtils {
 
     /**
      * This method takes a string which may contain HTML tags (ie, &lt;b&gt;,
-     * &lt;table&gt;, etc) and converts the '&lt'' and '&gt;' characters to
+     * &lt;table&gt;, etc) and converts the '&lt;' and '&gt;' characters to
      * their HTML escape sequences.
      *
      * @param in the text to be converted.
@@ -398,18 +398,19 @@ public class StringUtils {
             new ConcurrentHashMap<String, MessageDigest>();
 
     /**
+     * <p>
      * Hashes a String using the Md5 algorithm and returns the result as a
      * String of hexadecimal numbers. This method is synchronized to avoid
      * excessive MessageDigest object creation. If calling this method becomes
      * a bottleneck in your code, you may wish to maintain a pool of
      * MessageDigest objects instead of using this method.
-     * <p/>
+     * </p><p>
      * A hash is a one-way function -- that is, given an
      * input, an output is easily computed. However, given the output, the
      * input is almost impossible to compute. This is useful for passwords
      * since we can store the hash and a hacker will then have a very hard time
      * determining the original password.
-     * <p/>
+     * </p><p>
      * In Jive, every time a user logs in, we simply
      * take their plain text password, compute the hash, and compare the
      * generated hash to the stored hash. Since it is almost impossible that
@@ -417,6 +418,7 @@ public class StringUtils {
      * the correct password or not. The only negative to this system is that
      * password recovery is basically impossible. Therefore, a reset password
      * method is used instead.
+     * </p>
      *
      * @param data the String to compute the hash of.
      * @return a hashed version of the passed-in String
@@ -426,18 +428,19 @@ public class StringUtils {
     }
 
     /**
+     * <p>
      * Hashes a String using the specified algorithm and returns the result as a
      * String of hexadecimal numbers. This method is synchronized to avoid
      * excessive MessageDigest object creation. If calling this method becomes
      * a bottleneck in your code, you may wish to maintain a pool of
      * MessageDigest objects instead of using this method.
-     * <p/>
+     * </p><p>
      * A hash is a one-way function -- that is, given an
      * input, an output is easily computed. However, given the output, the
      * input is almost impossible to compute. This is useful for passwords
      * since we can store the hash and a hacker will then have a very hard time
      * determining the original password.
-     * <p/>
+     * </p><p>
      * In Jive, every time a user logs in, we simply
      * take their plain text password, compute the hash, and compare the
      * generated hash to the stored hash. Since it is almost impossible that
@@ -445,6 +448,7 @@ public class StringUtils {
      * the correct password or not. The only negative to this system is that
      * password recovery is basically impossible. Therefore, a reset password
      * method is used instead.
+     * </p>
      *
      * @param data the String to compute the hash of.
      * @param algorithm the name of the algorithm requested.
@@ -461,18 +465,19 @@ public class StringUtils {
     }
 
     /**
+     * <p>
      * Hashes a byte array using the specified algorithm and returns the result as a
      * String of hexadecimal numbers. This method is synchronized to avoid
      * excessive MessageDigest object creation. If calling this method becomes
      * a bottleneck in your code, you may wish to maintain a pool of
      * MessageDigest objects instead of using this method.
-     * <p/>
+     * </p><p>
      * A hash is a one-way function -- that is, given an
      * input, an output is easily computed. However, given the output, the
      * input is almost impossible to compute. This is useful for passwords
      * since we can store the hash and a hacker will then have a very hard time
      * determining the original password.
-     * <p/>
+     * </p><p>
      * In Jive, every time a user logs in, we simply
      * take their plain text password, compute the hash, and compare the
      * generated hash to the stored hash. Since it is almost impossible that
@@ -480,6 +485,7 @@ public class StringUtils {
      * the correct password or not. The only negative to this system is that
      * password recovery is basically impossible. Therefore, a reset password
      * method is used instead.
+     * </p>
      *
      * @param bytes the byte array to compute the hash of.
      * @param algorithm the name of the algorithm requested.
@@ -506,12 +512,14 @@ public class StringUtils {
     }
 
     /**
+     * <p>
      * Turns an array of bytes into a String representing each byte as an
      * unsigned hex number.
-     * <p/>
+     * </p><p>
      * Method by Santeri Paavolainen, Helsinki Finland 1996<br>
      * (c) Santeri Paavolainen, Helsinki Finland 1996<br>
      * Distributed under LGPL.
+     * </p>
      *
      * @param bytes an array of bytes to convert to a hex-string
      * @return generated hex string
@@ -693,14 +701,16 @@ public class StringUtils {
             "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ").toCharArray();
 
     /**
+     * <p>
      * Returns a random String of numbers and letters (lower and upper case)
      * of the specified length. The method uses the Random class that is
      * built-in to Java which is suitable for low to medium grade security uses.
      * This means that the output is only pseudo random, i.e., each number is
-     * mathematically generated so is not truly random.<p>
-     * <p/>
+     * mathematically generated so is not truly random.
+     * </p><p>
      * The specified length must be at least one. If not, the method will return
      * null.
+     * </p>
      *
      * @param length the desired length of the random String to return.
      * @return a random String of numbers and letters of the specified length.
@@ -718,15 +728,17 @@ public class StringUtils {
     }
 
     /**
+     * <p>
      * Intelligently chops a String at a word boundary (whitespace) that occurs
      * at the specified index in the argument or before. However, if there is a
      * newline character before <code>length</code>, the String will be chopped
      * there. If no newline or whitespace is found in <code>string</code> up to
      * the index <code>length</code>, the String will chopped at <code>length</code>.
-     * <p/>
+     * </p><p>
      * For example, chopAtWord("This is a nice String", 10) will return
      * "This is a" which is the first word boundary less than or equal to 10
      * characters into the original String.
+     * </p>
      *
      * @param string the String to chop.
      * @param length the index in <code>string</code> to start looking for a
@@ -781,13 +793,15 @@ public class StringUtils {
     }
 
     /**
+     * <p>
      * Reformats a string where lines that are longer than <tt>width</tt>
      * are split apart at the earliest wordbreak or at maxLength, whichever is
      * sooner. If the width specified is less than 5 or greater than the input
      * Strings length the string will be returned as is.
-     * <p/>
+     * </p><p>
      * Please note that this method can be lossy - trailing spaces on wrapped
      * lines may be trimmed.
+     * </p>
      *
      * @param input the String to reformat.
      * @param width the maximum length of any one line.

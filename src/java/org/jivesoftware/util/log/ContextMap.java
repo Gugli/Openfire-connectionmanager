@@ -14,10 +14,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * The ContextMap contains non-hierarchical context information
+ * <p>The ContextMap contains non-hierarchical context information
  * relevent to a particular LogEvent. It may include information
- * such as;
- * <p/>
+ * such as;</p>
  * <ul>
  * <li>user -&gt;fred</li>
  * <li>hostname -&gt;helm.realityforge.org</li>
@@ -26,8 +25,8 @@ import java.util.Map;
  * <li>caller -&gt;com.biz.MyCaller.method(MyCaller.java:18)</li>
  * <li>source -&gt;1.6.3.2:33</li>
  * </ul>
- * The context is bound to a thread (and inherited by sub-threads) but
- * it can also be added to by LogTargets.
+ * <p>The context is bound to a thread (and inherited by sub-threads) but
+ * it can also be added to by LogTargets.</p>
  *
  * @author <a href="mailto:peter@apache.org">Peter Donald</a>
  */

@@ -119,7 +119,9 @@ public abstract class Session {
     /**
      * Creates a session with an underlying connection and permission protection.
      *
+     * @param serverName Name of the server
      * @param connection The connection we are proxying
+     * @param streamID The stream id
      */
     public Session(String serverName, Connection connection, String streamID) {
         conn = connection;

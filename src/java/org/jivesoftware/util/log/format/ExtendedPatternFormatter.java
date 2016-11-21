@@ -13,15 +13,14 @@ import org.jivesoftware.util.log.LogEvent;
 import org.jivesoftware.util.log.util.StackIntrospector;
 
 /**
- * Formatter especially designed for debugging applications.
- * <p/>
- * This formatter extends the standard PatternFormatter to add
+ * <p>Formatter especially designed for debugging applications.</p>
+ * <p>This formatter extends the standard PatternFormatter to add
  * two new possible expansions. These expansions are %{method}
  * and %{thread}. In both cases the context map is first checked
  * for values with specified key. This is to facilitate passing
  * information about caller/thread when threads change (as in
  * AsyncLogTarget). They then attempt to determine appropriate
- * information dynamically.
+ * information dynamically.</p>
  *
  * @author <a href="mailto:peter@apache.org">Peter Donald</a>
  * @version CVS $Revision: 37 $ $Date: 2004-10-21 03:08:43 -0300 (Thu, 21 Oct 2004) $

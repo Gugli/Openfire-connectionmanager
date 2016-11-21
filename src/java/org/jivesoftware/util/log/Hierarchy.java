@@ -32,8 +32,7 @@ public class Hierarchy {
     private Logger m_rootLogger;
 
     /**
-     * Retrieve the default hierarchy.
-     * <p/>
+     * <p>Retrieve the default hierarchy.</p>
      * <p>In most cases the default LogHierarchy is the only
      * one used in an application. However when security is
      * a concern or multiple independent applications will

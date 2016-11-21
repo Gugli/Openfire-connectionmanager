@@ -231,11 +231,10 @@ public class Logger {
     }
 
     /**
-     * Make this logger additive, which means send all log events to parent
+     * <p>Make this logger additive, which means send all log events to parent
      * loggers LogTargets regardless of whether or not the
-     * LogTargets have been overidden.
-     * <p/>
-     * This is derived from Log4js notion of Additivity.
+     * LogTargets have been overidden.</p>
+     * <p>This is derived from Log4js notion of Additivity.</p>
      *
      * @param additivity true to make logger additive, false otherwise
      */

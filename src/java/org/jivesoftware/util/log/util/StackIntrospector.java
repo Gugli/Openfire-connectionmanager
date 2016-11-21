@@ -163,10 +163,9 @@ public final class StackIntrospector {
     }
 
     /**
-     * Return the current call stack as a String, starting with the first call
+     * <p>Return the current call stack as a String, starting with the first call
      * in the stack after a reference to the <code>clazz</code> class, and then
-     * display <code>entries</code> entries.
-     * <p/>
+     * display <code>entries</code> entries.</p>
      * <p>This can be useful for debugging code to determine where calls to a
      * method are coming from.</p>
      *

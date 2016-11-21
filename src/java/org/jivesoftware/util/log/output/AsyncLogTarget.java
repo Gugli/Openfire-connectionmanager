@@ -14,17 +14,15 @@ import org.jivesoftware.util.log.LogTarget;
 import java.util.LinkedList;
 
 /**
- * An asynchronous LogTarget that sends entries on in another thread.
+ * <p>An asynchronous LogTarget that sends entries on in another thread.
  * It is the responsibility of the user of this class to start
- * the thread etc.
- * <p/>
+ * the thread etc.</p>
  * <pre>
  * LogTarget mySlowTarget = ...;
  * AsyncLogTarget asyncTarget = new AsyncLogTarget( mySlowTarget );
  * Thread thread = new Thread( asyncTarget );
  * thread.setPriority( Thread.MIN_PRIORITY );
  * thread.start();
- * <p/>
  * logger.setLogTargets( new LogTarget[] { asyncTarget } );
  * </pre>
  *

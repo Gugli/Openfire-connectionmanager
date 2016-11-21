@@ -30,7 +30,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * Dispatches property events. Each event has a {@link EventType type}
  * and optional parameters, as follows:<p>
  *
- * <table border="1">
+ * <table border="1" summary="optional parameters">
  * <tr><th>Event Type</th><th>Extra Params</th></tr>
  * <tr><td>{@link EventType#property_set property_set}</td><td>A param named <tt>value</tt> that
  *      has the value of the property set.</td></tr>

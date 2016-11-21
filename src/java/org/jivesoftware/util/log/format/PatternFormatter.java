@@ -17,18 +17,16 @@ import java.util.Date;
 import java.util.Stack;
 
 /**
- * This formater formats the LogEvents according to a input pattern
- * string.
- * <p/>
- * The format of each pattern element can be %[+|-][#[.#]]{field:subformat}.
- * </p>
+ * <p>This formater formats the LogEvents according to a input pattern
+ * string.</p>
+ * <p>The format of each pattern element can be %[+|-][#[.#]]{field:subformat}.</p>
  * <ul>
  * <li>The +|- indicates left or right justify.
  * </li>
  * <li>The #.# indicates the minimum and maximum size of output.<br>
  * You may omit the values and the field will be formatted without size
  * restriction.<br>
- * You may specify '#', or '#.' to define an minimum size, only.</br>
+ * You may specify '#', or '#.' to define an minimum size, only.<br>
  * You may specify '.#' to define an maximum size only.
  * </li>
  * <li>
@@ -59,8 +57,8 @@ import java.util.Stack;
  * <p>A simple example of a typical PatternFormatter format:
  * </p>
  * <pre><code>%{time} %5.5{priority}[%-10.10{category}]: %{message}
- * </pre></code>
- * <p/>
+ * </code></pre>
+ * <p>
  * This format string will format a log event printing first time value of
  * of log event with out size restriction, next priority with minum and maximum size 5,
  * next category right justified having minmum and maximum size of 10,
@@ -69,7 +67,7 @@ import java.util.Stack;
  * <p>A formatted sample message of the above pattern format:
  * </p>
  * <pre><code>1000928827905 DEBUG [     junit]: Sample message
- * </pre><code>
+ * </code></pre>
  *
  * @author <a href="mailto:peter@apache.org">Peter Donald</a>
  * @author <a href="mailto:sylvain@apache.org">Sylvain Wallez</a>
