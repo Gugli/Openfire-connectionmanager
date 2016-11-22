@@ -1109,7 +1109,8 @@ public class StringUtils {
                 }
                 stringprepCache.put(domain, null);
             }
-            if (!stringprepCache.containsKey(resource)) {
+            // A JID without resource is still a valid JID
+            if ( resource != null && !stringprepCache.containsKey(resource)) {
                 resource = Stringprep.resourceprep(resource);
                 // Validate field is not greater than 1023 bytes. UTF-8 characters use two bytes.
                 if (resource != null && resource.length()*2 > 1023) {
